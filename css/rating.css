@@ -1,0 +1,66 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+.stars {
+    margin-right: auto;
+    width: fit-content;
+}
+.rating {
+    border: none;
+    margin-right: 49px;
+}
+
+.rating>[id^="star"] {
+    display: none
+}
+
+.rating>label:before {
+    margin: 2px 2px 5px;
+    font-size: 19px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005"
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute
+}
+
+.rating>label {
+    color: #c9d8d8;
+    float:right;
+}
+.stars .rating > label {
+    color: #c9d8d8;
+}
+.rating>[id^="star"]:checked~label,
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color:#F06D6E;
+}
+
+.rating>[id^="star"]:checked+label:hover,
+.rating>[id^="star"]:checked~label:hover,
+.rating>label:hover~[id^="star"]:checked~label,
+.rating>[id^="star"]:checked~label:hover~label {
+    color:#F06D6E;
+}
+ a.add_field_button {
+  font-size: 16px;
+  color: #209392;
+  font-weight: 400;
+  background: 0;
+  padding: 0;
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+}
+.mylink a
+{
+text-decoration:none;
+color:inherit;
+padding-left:10px;	
+}
+.mylink a:hover
+{
+text-decoration:underline;
+}
